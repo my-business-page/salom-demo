@@ -1,0 +1,1 @@
+export function mountFooter(){const f=document.querySelector('[data-footer]');if(f)f.innerHTML=`<div><strong>ZAARA</strong><span>Indian dining, reimagined.</span></div><div><a href="menu.html">Menu</a><a href="reserve.html">Reserve</a><a href="contact.html">Visit</a></div><small>© 2026 ZAARA · Demo experience</small>`}

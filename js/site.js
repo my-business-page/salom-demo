@@ -1,0 +1,1 @@
+import {mountNav} from '../components/nav.js';import {mountFooter} from '../components/footer.js';export function bootChrome(){mountNav(document.body.dataset.page||'');mountFooter();document.body.insertAdjacentHTML('afterbegin','<canvas id="vfx" aria-hidden="true"></canvas>')}

@@ -1,0 +1,1 @@
+export function initA11y(){document.querySelectorAll('img:not([alt])').forEach(i=>i.alt='Indian dish');document.addEventListener('keydown',e=>{if(e.key==='Escape'){const m=document.querySelector('.modal-root');if(m)m.className='modal-root'}})}

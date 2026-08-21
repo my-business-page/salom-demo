@@ -1,0 +1,1 @@
+export function bookingLink(dish){return `reserve.html${dish?'?dish='+encodeURIComponent(dish):''}`}

@@ -1,0 +1,1 @@
+uniform float uTime;varying vec2 vUv;void main(){float a=atan(vUv.y-.5,vUv.x-.5);float beam=smoothstep(.7,.0,abs(sin(a*3.0+uTime*.25)));gl_FragColor=vec4(vec3(.55,.32,.10)*beam*.35,.25);}

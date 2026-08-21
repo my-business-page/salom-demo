@@ -1,0 +1,1 @@
+export const paths={dishes:'data/dishes.json',menu:'data/menu.json',events:'data/events.json',reviews:'data/reviews.json'};export const getData=key=>fetch(paths[key]).then(r=>{if(!r.ok)throw Error(`Cannot load ${key}`);return r.json()})

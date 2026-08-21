@@ -1,0 +1,1 @@
+export function initInteraction(){document.querySelectorAll('.menu-card,.experience-grid article,.event-list article').forEach(el=>el.addEventListener('pointermove',e=>{const r=el.getBoundingClientRect();el.style.setProperty('--mx',`${((e.clientX-r.left)/r.width-.5)*8}deg`);el.style.setProperty('--my',`${((e.clientY-r.top)/r.height-.5)*-8}deg`)}))}

@@ -1,0 +1,1 @@
+export function initParticles(){document.querySelectorAll('.spark').forEach(x=>x.remove());const n=matchMedia('(max-width:700px)').matches?14:26;for(let i=0;i<n;i++){const s=document.createElement('i');s.className='spark';s.style.left=Math.random()*100+'%';s.style.top=Math.random()*100+'%';s.style.animationDelay=Math.random()*8+'s';document.body.appendChild(s)}}

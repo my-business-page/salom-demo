@@ -1,0 +1,1 @@
+export const modalShell=()=>{if(!document.querySelector('#dish-modal'))document.body.insertAdjacentHTML('beforeend','<div id="dish-modal" class="modal-root"></div>')};

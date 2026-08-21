@@ -1,0 +1,1 @@
+export const card=(d)=>`<article class="menu-card" tabindex="0" data-id="${d.id}"><img class="menu-photo" data-food="${d.imageQuery}" alt="${d.name}" loading="lazy"><div class="menu-copy"><h3>${d.name}</h3><p>${d.description}</p><div class="menu-meta"><span>${d.region}</span><b>₹${d.price}</b></div></div></article>`;

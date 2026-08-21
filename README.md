@@ -1,20 +1,15 @@
-# ZAARA — Cinematic Indian Restaurant
+# ZAARA — complete restaurant rebuild
 
-A static, GitHub-Pages-ready restaurant experience rebuilt around a real 3D interaction concept.
+A static GitHub Pages concept with exactly 50 files. The centerpiece is a physical-looking round dining table built with CSS 3D: plates are distributed around the table, and dragging rotates the table itself so the next plate arrives in front.
+
+## Architecture
+HTML pages + modular CSS + ES modules + CSS 3D + Canvas particles + GLSL-ready shader assets. No backend is required.
+
+## Photography
+Featured dish imagery is resolved by `js/image-loader.js` against Wikimedia Commons search using each dish's exact search identity. This prevents the old failure mode where one samosa photo was reused for unrelated drinks. Production deployment should replace remote results with licensed restaurant photography.
 
 ## Pages
-- Home — perspective dining table with drag/swipe rotation
-- Menu — 100+ dish catalog with filters
-- Story — restaurant philosophy
-- Experience — tasting and private dining concepts
-- Gallery — visual journal
-- Events — private event enquiry
-- Reserve — reservation request flow
-- Contact — visit/contact information
-- 404 — branded fallback
+Home, Menu, Story, Experience, Gallery, Events, Reserve, Contact, 404.
 
-## Interaction
-The hero table is a single CSS 3D world: tabletop + pedestal + plate + food image. Horizontal dragging rotates the whole table around its vertical axis; each snapped position selects a different featured dish.
-
-## Deployment
-No server is required. The project is designed for GitHub Pages. External image URLs are used for the demo; replace them with licensed, verified restaurant photography for production.
+## Performance
+Images are lazy-loaded, particle density adapts, animation pauses when hidden, and reduced-motion is respected. The menu is semantic HTML rather than a PDF.

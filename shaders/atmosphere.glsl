@@ -1,0 +1,1 @@
+uniform float uTime;uniform vec2 uResolution;varying vec2 vUv;void main(){vec2 p=vUv-.5;float glow=exp(-7.0*dot(p,p));float grain=fract(sin(dot(vUv*uResolution,vec2(12.9898,78.233)))*43758.5453);vec3 c=vec3(.18,.07,.025)*glow+vec3(.02,.012,.008)*grain*.08;gl_FragColor=vec4(c,.35);}

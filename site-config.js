@@ -1,0 +1,1 @@
+export const site={name:'ZAARA',tagline:'Modern Indian dining',pages:[['Home','index.html'],['Menu','menu.html'],['Experience','experience.html'],['Our Story','about.html'],['Gallery','gallery.html'],['Events','events.html'],['Reserve','reserve.html'],['Visit','contact.html']]};
